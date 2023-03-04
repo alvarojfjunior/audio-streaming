@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
 
-function App() {
+const MeetRoom = () => {
+  const meetLink = "https://meet.jit.si/LuckyShoesAskDangerously";
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <iframe
+      style={{ height: '99vh', margin: 0, padding: 0 }}
+      src={meetLink}
+      width="100%"
+      frameborder="0"
+      allow="microphone; camera; fullscreen"
+      allowfullscreen
+    ></iframe>
   );
-}
+};
 
-export default App;
+export default MeetRoom;
